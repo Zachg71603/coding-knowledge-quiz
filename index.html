@@ -5,43 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-
-
-    <title>Javascript Code Quiz</title>
+    <title>Code Quiz</title>
 </head>
-<!--Create a heading introducing the game and the instructions-->
-<!--Create a button that starts up the game-->
-<!--Create area where question and possible answers can be shown-->
+<!--Create a heading stating the game and the instructions-->
+<!--Create a button that begins the game-->
+<!--Create area where question and possible answers can be displayed-->
+<!--Create scoreboard area and timer area-->
 <body>
 <header>
     <h1>Test your coding knowledge!</h1>
-    <h2 id = "instructions">You have 1 minute to finish the quiz. Wrong answers will be penalized by 10 seconds</h2>
+    <h2 id = "instruct">You have 1 minute to finish the quiz. Wrong answers will be penalized by 10 seconds</h2>
+    
 </header>
 <hr>
-
 <section id = "timer">
-    <p>Timer</p>
         <div id="counter"></div>
 </section>
 
-<section id="scoreboard">
-        <h2>Top Scores!</h2>
-        <ol>
-            <li>Filler person</li>
-            <li>Filler person</li>
-            <li>Filler person</li>
-        </ol>
-</section>
-
-<a href="highscores.html">See Highscores here!</a>
+    <a href="highscores.html">See Highscores here!</a>
 
 <section id="maincontainer">
     
-    <div id="questions"></div>
-    <button id="quizStart">Start Quiz!</button>
-        
+        <div id="questions"></div>
+        <button id="startQuiz">Start Quiz!</button>
+            
 </section>
-
+   
 <script src="script.js"></script>
 </body>
 
