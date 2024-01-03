@@ -15,6 +15,7 @@
 <body>
 <header>
     <h1>Test your coding knowledge!</h1>
+    <h2 id = "instruct">You have 1 minute to finish the quiz. Wrong answers will be penalized by 10 seconds</h2>
 </header>
 <hr>
 
@@ -32,26 +33,18 @@
         </ol>
 </section>
 
+<a href="highscores.html">See Highscores here!</a>
+
 <section id="maincontainer">
-
-    <button id="startquiz">Start Quiz!</button>
-
-    <div id="quiz" style="display: none">
-
-        <div id="question"></div>
-        <div id="choices">
-            <div class="choice" id="A"></div>
-            <div class="choice" id="B"></div>
-            <div class="choice" id="C"></div>
-        </div>
-    </div>
     
-
+    <div id="questions"></div>
+    <button id="quizStart">Start Quiz!</button>
+        
 </section>
 
-
+<script src="script.js"></script>
 </body>
 
-<script src="script.js"></script>
+
 
 </html>
