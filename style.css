@@ -146,3 +146,26 @@ li:hover{
 a {
     font-size: 20px;
 }
+
+@media only screen and (max-width: 1000px) {
+    #maincontainer {
+      width: 75vw;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #scoreboard {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #timer {
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    #quizstart {
+        font-size: 2vw;
+        width: 20vw;
+        height: 8vw;
+    }
+  }
