@@ -32,3 +32,16 @@ var questionArray = [
     },
 
 ]
+
+//listing all variables I will need
+var userScore = 0;
+var questionAmount = 0;
+var timerBox = document.querySelector("#timer");
+var questionBox = document.querySelector("#maincontainer");
+var startButton = document.querySelector("#startQuiz");
+var createList = document.createElement("ul");
+//variables for timer
+var totalSeconds = 60;
+var holdPenaltyTime= 0;
+var penaltyTime = 15;
+
