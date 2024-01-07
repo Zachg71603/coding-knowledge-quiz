@@ -94,7 +94,7 @@ li:hover{
     font-size: 20px;
     width: 100px;
     height: 50px;
-    border : 5% solid white;
+    border : 5% solid lightpink;
     border-radius: 20px;
     cursor: pointer;
 }
@@ -108,8 +108,9 @@ li:hover{
 }
 #hs {
     font-size: 50px;
+    
     background-color: lightpink;
-    color: white;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -118,10 +119,10 @@ li:hover{
     font-size: 50px;
 }
 #clear:hover{
-    border: 3px solid black;
+    border: 3px solid lightpink;
 }
 #goBack:hover{
-    border: 3px solid black;
+    border: 3px solid lightpink;
 }
 a {
     font-size: 20px;
