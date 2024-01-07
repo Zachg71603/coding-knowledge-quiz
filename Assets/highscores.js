@@ -22,7 +22,8 @@ if (allScores !== null) {
 
     }
 }
-// Go back to index.html
+// Go back to index.html 
+// final commit note
 goBack.addEventListener("click", function () {
     window.location.replace("./index.html");
 });
