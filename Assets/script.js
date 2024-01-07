@@ -1,11 +1,5 @@
-// my questions and answers in one object
+//declare my questions and answers globally in one massive object
 var questionArray = [
-    {
-        question: "What are the 3 main programming languages of the internet?",
-        answers: ["jQuery, MongoDB, Python","HTML, CSS, JavaScript","C++, CSharp, Unity"],
-        correctAnswer: "HTML, CSS, JavaScript",    
-  
-    },
     {
         question: "What type of event in JavaScript makes a button work?",
         answers: ["clickOn","doubleClick","onClick",],
@@ -13,15 +7,21 @@ var questionArray = [
            
     },
     {
+        question: "What are the 3 main programming languages of the internet?",
+        answers: ["jQuery, MongoDB, Python","HTML, CSS, JavaScript","C++, CSharp, Unity"],
+        correctAnswer: "HTML, CSS, JavaScript",    
+  
+    },
+    {
         question: "What is one way you can make a website mobile-friendly?",
-        answers: ["Media Queries","Smaller font sizes", "You dont, websites are automatically mobile-friendly"],
+        answers: ["Media Queries","Smaller font sizes", "You dont, mobile users do not matter"],
         correctAnswer: "Media Queries"  
          
     },
     {
-        question: "In web development, which of the following is used to call HTML ID elements from a JavaScript class?",
-        answers: [".", "#", "$"],
-        correctAnswer: "$",    
+        question: "Who invented JQuery?",
+        answers: ["Albert Einstein", "John Resig", "Elon Musk"],
+        correctAnswer: "John Resig",    
   
     },
     {
@@ -32,7 +32,7 @@ var questionArray = [
     },
 
 ]
-//declaring all variables I will need
+//state all global variables I will need
 var userScore = 0;
 var questionAmount = 0;
 var timerBox = document.querySelector("#timer");
@@ -46,12 +46,12 @@ var penaltyTime = 15;
 
 
  
-//starts timer and tracks penalty times. Calling displayQuestion.
+//starts timer and tracks penalty times. Calling to displayQuestion.
 quizStart.addEventListener("click", function(){
    
    //BUTTON HIDDEN!
     this.style.visibility = "hidden";
-    //check if timer at zero
+    //check if timer is at zero
     if (holdPenaltyTime === 0){
         holdPenaltyTime = setInterval(function(){
             totalSeconds--;
@@ -64,13 +64,13 @@ quizStart.addEventListener("click", function(){
         }
     }, 1000);
 }
-   //TIMER WORKING!!!
+   
 //console.log(quizStart, timerBox)
 displayQuestion(questionAmount);
 } 
 
  ) 
- //function that displays questions on screen. Need to call it in the function
+ //function that shows questions on screen. Need to call it in the function
  //above with the eventlistener.
  function displayQuestion(questionAmount){
     questionBox.innerHTML = "";
@@ -132,7 +132,7 @@ function evaluate(event){
     
 }
 
-//Quiz is working well! Fixed bugs regarding right and wrong questions. Everything displaying
+//Fixed bugs regarding right and wrong questions. Everything displaying
 //as intended!
 
 //Function that stores the data and adds/displays to scoreboard.
